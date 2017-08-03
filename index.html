@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="shortUrlApp">
+
+<head>
+
+  <title>URL Shortener</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><!-- jQuery 3.1.1  -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+
+  <link rel="stylesheet" href="index.css" type="text/css">
+
+  <script src="app.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+  div {
+    min-height: 90vh;
+  }
+
+  footer {
+    background-color: rgba(127,127,127,0.5);
+    min-height: 10vh;
+    padding: 1%;
+    text-align: center;
+    font-family: cursive, sans-serif;
+  }
+  </style>
+
+  <script></script>
+
+</head>
+
+<body class='text-center'>
+<div class="container-fluid">
+<p class="text-vertical-center">&nbsp;</p>
+<header>
+<h3>URL Shortener Microservice</h3>
+<h4><a href='https://www.freecodecamp.com/' target='_blank'>freeCodeCamp API's and Microservices</a></h4>
+
+<h5> Node, Express, MongoDB, Mongoose, JavaScript, HTML, CSS, Bootstrap</h5>
+
+</header>
+
+<section ng-controller="shortAppCtrl">
+  {{urlToShorten}}
+  <br/>
+
+  <input placeholder="Enter Url" ng-model="urlToShorten">
+  <a class="btn btn-primary" ng-href="/new/{{urlToShorten}}"> Get Short Url</a>
+
+</section>
+
+</div>
+  <footer>
+    <p>
+      <a href="https://plus.google.com/u/0/109449761845014157264" target="_blank"><i class="fa fa-google-plus fa-fw fa-1x"></i></a>
+      <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> for
+      <a href="https://www.freecodecamp.com/michaeltd/" target='_blank'><i class="fa fa-free-code-camp fa-fw fa-1x"></i></a>
+    </p>
+  </footer>
+</body>
+</html>
